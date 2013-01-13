@@ -16,6 +16,6 @@
     android:layout_width="0dip"
     android:layout_height="match_parent"
     android:layout_weight="50"
-    class="com.example.videotest.VideoPlayerFragment" />
+    class="com.example.videotest.videoview.VideoViewFragment" />
 
 </LinearLayout>

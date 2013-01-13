@@ -1,31 +1,48 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:orientation="vertical" >
+  android:layout_height="match_parent" >
 
-  <TextView
+  <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="@string/explanation" />
+    android:orientation="vertical" >
 
-  <Button
-    android:id="@+id/button_video_player_fullscreen"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/view_video_full" />
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/explanation" />
 
-  <Button
-    android:id="@+id/button_video_player_halfscreen"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/view_video_half" />
+    <Button
+      android:id="@+id/button_video_player_fullscreen"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/view_videoview_fullscreen" />
 
-  <CheckBox
-    android:id="@+id/checkbox_toggle_fix"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:checked="false"
-    android:text="@string/toggle_the_fix_for_fullscreen_video" />
+    <Button
+      android:id="@+id/button_video_player_halfscreen"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/view_videoview_halfscreen" />
 
-</LinearLayout>
+    <Button
+      android:id="@+id/button_media_player_fullscreen"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/view_media_player_fullscreen" />
+
+    <Button
+      android:id="@+id/button_media_player_halfscreen"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/view_media_player_halfscreen" />
+
+    <CheckBox
+      android:id="@+id/checkbox_toggle_fix"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:checked="false"
+      android:text="@string/toggle_the_fix_for_the_calculated_video_size" />
+  </LinearLayout>
+
+</ScrollView>

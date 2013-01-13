@@ -1,18 +1,20 @@
-package com.example.videotest;
+package com.example.videotest.videoview;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
-public class VideoActivityFullScreen extends FragmentActivity {
+import com.example.videotest.R;
 
-	private VideoPlayerFragment videoPlayerFragment;
+public class VideoViewActivityFullScreen extends FragmentActivity {
+
+	private VideoViewFragment videoPlayerFragment;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_video_fullscreen);
+		setContentView(R.layout.activity_videoview_fullscreen);
 
-		videoPlayerFragment = (VideoPlayerFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_video_player);
+		videoPlayerFragment = (VideoViewFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_video_player);
 	}
 
 	@Override

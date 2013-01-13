@@ -1,13 +1,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  tools:context=".MainActivity" >
+  android:layout_height="match_parent" >
 
   <fragment
     android:id="@+id/fragment_video_player"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    class="com.example.videotest.VideoPlayerFragment" />
+    class="com.example.videotest.mediaplayer.MediaPlayerFragment" />
 
 </RelativeLayout>

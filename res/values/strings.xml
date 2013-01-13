@@ -2,12 +2,13 @@
 <resources>
 
   <string name="app_name">VideoTest</string>
-  <string name="hello_world">Hello world!</string>
   <string name="menu_settings">Settings</string>
-  <string name="view_video_full">View Video FullScreen</string>
-  <string name="view_video_half">View Video HalfScreen</string>
+  <string name="view_videoview_fullscreen">VideoView FullScreen</string>
+  <string name="view_videoview_halfscreen">VideoView HalfScreen</string>
   <string name="icon">icon</string>
-  <string name="toggle_the_fix_for_fullscreen_video">Toggle the Fix for fullscreen video (which breaks halfscreen video)</string>
+  <string name="view_media_player_fullscreen">MediaPlayer FullScreen</string>
+  <string name="view_media_player_halfscreen">MediaPlayer HalfScreen</string>
   <string name="explanation">(1) Samsung Galaxy Nexus -These videos play in the correct ratio.\nIf you toggle the checkbox, the fullscreen ratio slightly changes and the halfscreen video ratio will be incorrect.\n\n(2) Samsung Galaxy S3 - The fullscreen video ratio is incorrect, but the half screen seems correct.\nIf you toggle the checkbox, the fullscreen video ratio is correct but the half size ratio is then incorrect.</string>
+  <string name="toggle_the_fix_for_the_calculated_video_size">Toggle the fix for the calculated video size</string>
 
 </resources>

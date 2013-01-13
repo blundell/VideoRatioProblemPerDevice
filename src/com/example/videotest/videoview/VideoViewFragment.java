@@ -1,13 +1,16 @@
-package com.example.videotest;
+package com.example.videotest.videoview;
 
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.*;
+import android.widget.MediaController;
 import android.widget.Toast;
 
-public class VideoPlayerFragment extends Fragment {
+import com.example.videotest.R;
+
+public class VideoViewFragment extends Fragment {
 
 	private static final String TAG = "VideoPlayer";
 
@@ -15,11 +18,17 @@ public class VideoPlayerFragment extends Fragment {
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		View root = inflater.inflate(R.layout.fragment_video_player, container, false);
+		View root = inflater.inflate(R.layout.fragment_video_view, container, false);
 
 		videoView = (FitVideoView) root.findViewById(R.id.surface);
 
 		return root;
+	}
+
+	@Override
+	public void onActivityCreated(Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+		videoView.setMediaController(new MediaController(getActivity()));
 	}
 
 	public void playVideo() {
@@ -41,8 +50,6 @@ public class VideoPlayerFragment extends Fragment {
 	}
 
 	public void pauseVideo() {
-		if (videoView.isPlaying()) {
-			videoView.pause();
-		}
+		videoView.pause();
 	}
 }
