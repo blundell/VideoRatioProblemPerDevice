@@ -1,7 +1,17 @@
 VideoRatioProblemPerDevice
 ==========================
 
-Issue with the Samsung Galaxy S3 not playing videos at the correct ratio
+~~Issue with the Samsung Galaxy S3 not playing videos at the correct ratio~~
+
+Issue with the MediaPlayer not retrieving the correct video width x height.
+
+**I have now updated this repo with a fix for this issue by hard coding the WxH.**
+Obviously not the best fix because I still haven't worked out why it is not returning this WxH from the MediaPlayer.
+
+Here is the video information, as you can see the WxH is 640x480 but the recommended size is 853x480
+(I would say the recommended size is the correct size).
+
+![5](http://img.photobucket.com/albums/v230/blundell/Untitled-4_zpsad1c4313.png)
 
 Galaxy Nexus Full Screen correct ratio:
 
